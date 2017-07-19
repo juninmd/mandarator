@@ -1,0 +1,26 @@
+{
+    "name": "Mandarator",
+    "description": "Exibe mensagem ao usuário, baseado na extensão fatalator.",
+    "version": "1.2",
+    "icons": {
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "js": [
+                "background.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/big-head.png"
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
