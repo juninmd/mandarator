@@ -7,9 +7,9 @@ A standard software project.
 
 ## Installation
 
-1.  Clone the repository: `git clone https://github.com/your-username/mandarator.git`
+1.  Clone the repository: `git clone https://github.com/juninmd/mandarator.git`
 2.  Navigate to the project directory: `cd mandarator`
-3.  Install dependencies: `npm install`
+3.  Load it as an unpacked extension: open `chrome://extensions`, enable *Developer mode* and click *Load unpacked* on the `mandarator` folder. The project has no dependencies to install.
 
 ## Usage
 

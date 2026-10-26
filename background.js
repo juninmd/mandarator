@@ -60,7 +60,8 @@
     };
 
     forbiddenHosts.forEach(function (invalid) {
-        if (currentHost.search(invalid) !== -1) {
+        // Casa só no início de um rótulo do host: 'vine' não casa com 'divine.com'.
+        if (new RegExp('(^|[.-])' + invalid).test(currentHost)) {
             document.body.insertBefore(createmandarator(invalid), document.body.firstChild);
             document.getElementById('mandarator-close').addEventListener('click', removemandarator);
         };
